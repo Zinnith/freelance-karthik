@@ -1,7 +1,17 @@
 import { Download  } from "lucide-react";
-export const AnimatedBorderButton=()=>{
+export const AnimatedBorderButton = () => {
+  const handleDownload = () => {
+    const link = document.createElement("a");
+    link.href = "/cv/Karthick_M_CV.pdf";
+    link.download = "Karthick_M_CV.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
     return (
     <button
+     onClick={handleDownload}
       className="relative bg-transparent border border-border 
         text-foreground hover:border-primary/50 transition-all 
         duration-1000 focus:outline-none focus-visible:ring-2 
