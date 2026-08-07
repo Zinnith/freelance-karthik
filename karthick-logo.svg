@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3B82F6"/>
+      <stop offset="100%" stop-color="#06B6D4"/>
+    </linearGradient>
+
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect
+    x="40"
+    y="40"
+    width="432"
+    height="432"
+    rx="110"
+    fill="#0F172A"
+    stroke="url(#grad)"
+    stroke-width="12"/>
+
+  <!-- K -->
+  <g
+    stroke="url(#grad)"
+    stroke-width="28"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    fill="none"
+    filter="url(#glow)">
+
+    <path d="M170 135V377"/>
+
+    <path d="M170 256L332 135"/>
+
+    <path d="M170 256L332 377"/>
+
+  </g>
+</svg>

@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="180"
+     height="48"
+     viewBox="0 0 180 48"
+     fill="none"
+     aria-labelledby="karthick-logo-title">
+
+  <title id="karthick-logo-title">Karthick</title>
+
+  <defs>
+    <linearGradient id="kGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3B82F6"/>
+      <stop offset="100%" stop-color="#06B6D4"/>
+    </linearGradient>
+
+    <linearGradient id="textGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#E2E8F0"/>
+    </linearGradient>
+
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Logo Icon -->
+  <g transform="translate(2 2)">
+    <rect
+      x="0"
+      y="0"
+      width="42"
+      height="42"
+      rx="12"
+      fill="rgba(255,255,255,.05)"
+      stroke="url(#kGradient)"
+      stroke-width="2"/>
+
+    <path
+      d="M13 10V34
+         M13 22L29 10
+         M13 22L30 34"
+      stroke="url(#kGradient)"
+      stroke-width="4"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      filter="url(#glow)"/>
+  </g>
+
+  <!-- Brand Name -->
+  <text
+      x="56"
+      y="29"
+      font-family="Inter, Poppins, sans-serif"
+      font-size="22"
+      font-weight="700"
+      letter-spacing="1"
+      fill="url(#textGradient)">
+      KARTHICK
+  </text>
+
+</svg>

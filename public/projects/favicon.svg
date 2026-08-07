@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 220">
+  <defs>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFE082"/>
+      <stop offset="50%" stop-color="#FBBF24"/>
+      <stop offset="100%" stop-color="#D97706"/>
+    </linearGradient>
+
+    <linearGradient id="blue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3B82F6"/>
+      <stop offset="100%" stop-color="#06B6D4"/>
+    </linearGradient>
+
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Icon -->
+  <g transform="translate(35 35)">
+    <rect
+      x="0"
+      y="0"
+      width="110"
+      height="110"
+      rx="28"
+      fill="none"
+      stroke="url(#blue)"
+      stroke-width="4"/>
+
+    <!-- K -->
+    <path
+      d="M35 25V85
+         M35 56L78 25
+         M35 56L80 85"
+      fill="none"
+      stroke="url(#gold)"
+      stroke-width="8"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      filter="url(#glow)"/>
+  </g>
+
+  <!-- Name -->
+  <text
+    x="180"
+    y="92"
+    font-size="64"
+    font-family="Poppins,Montserrat,Arial,sans-serif"
+    font-weight="700"
+    fill="#FFFFFF"
+    letter-spacing="2">
+    KARTHICK
+  </text>
+
+  <!-- Accent -->
+  <rect
+    x="182"
+    y="108"
+    width="170"
+    height="5"
+    rx="3"
+    fill="url(#gold)"/>
+
+  <!-- Subtitle -->
+  <text
+    x="182"
+    y="145"
+    font-size="18"
+    font-family="Poppins,Arial,sans-serif"
+    letter-spacing="5"
+    fill="#94A3B8">
+    RESTAURANT MANAGER
+  </text>
+</svg>
